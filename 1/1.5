@@ -1,0 +1,2 @@
+docker run -it --name test2 ubuntu sh -c 'apt update; apt install -y curl wget; echo "Input website:"
+; read website; echo "Searching.."; sleep 1; curl http://$website;'
