@@ -1,0 +1,1 @@
+docker run -p 8000:8000 -v /home/dhanu/ws/docker-exercises/1/1.11/logs.txt:/backend-example-docker/logs.txt 1.11
