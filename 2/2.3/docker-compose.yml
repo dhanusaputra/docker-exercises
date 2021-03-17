@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  backend:
+    build:
+      context: ../../1/1.12/backend
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+  frontend:
+    build:
+      context: ../../1/1.12/frontend
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+
