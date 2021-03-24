@@ -4,8 +4,8 @@ RUN apk add --no-cache git && \
     cd material-applications/example-backend && \
     go build .
 
-FROM golang:alpine
-COPY --from=build-stage /go/material-applications/example-backend/server server
+FROM alpine
+COPY --from=build-stage /go/material-applications/example-backend/server .
 ENV REQUEST_ORIGIN=http://localhost:5000
 ENV PORT=8000
 EXPOSE 8000
